@@ -1,0 +1,118 @@
+.collapsible {
+  background-color: white;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: 1px solid;
+  border-radius: 5px;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.collapsible:after {
+  content: '\02795';
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+}
+
+.active, .collapsible:hover {
+  background-color: black;
+  color: white;
+}
+
+.content {
+  padding: 0 0px;
+  display: none;
+  overflow: hidden;
+  background-color: white;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;   
+}
+
+th,td {
+  border-style: solid;
+  border-width: 5px;
+  word-wrap: break-word;
+}
+
+.bg-image {
+  background-image: url("https://images.pexels.com/photos/1252890/pexels-photo-1252890.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-text {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4); 
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+::selection {
+  background-color: #352e7e;
+  color: #fff;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-github {
+  padding: 8px;
+  background: #c9510c;
+  color: white;
+}
+
+.fa-instagram { 
+  padding: 8px;  
+  background: #8134AF  ;   
+  color: white;   
+}     
+
+.fa-linkedin {
+  padding: 8px;
+  background: #2867B2;
+  color: white;
+}
+
+.fa-google {
+  padding: 8px;
+  background: #4285F4 ;
+  color: white;
+}
